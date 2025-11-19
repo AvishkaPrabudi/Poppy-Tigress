@@ -58,7 +58,7 @@ const FAQ = () => {
                 <img
                   src={flag}
                   alt="flag"
-                  className="absolute -top-3 left-1/2 -translate-x-1/2 w-[200px] z-0"
+                  className="absolute -top-3 left-1/2 -translate-x-1/2 w-[200px] max-w-[742px] h-auto z-0"
                 />
                 <div className="relative bg-gradient-to-r from-red-600 to-orange-500 px-6 py-3 rounded-md shadow-lg text-center min-w-[230px]">
                   How do I earn Tigress Tokens?

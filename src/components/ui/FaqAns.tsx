@@ -21,26 +21,24 @@ const FaqAns: React.FC = () => {
       </button>
 
       {/* Background rock */}
-        
-          <img
-            src={rocketright}
-            alt="rock"
-            className="absolute left-0 bottom-0 w-[250px] md:w-[350px] object-contain transform scale-x-[-1]"
-          />
 
-      {/* Flag + Title */}
-      <div className="relative flex flex-col md:flex-row items-start md:items-center justify-start md:ml-40 mt-10 md:mt-0">
+      <img
+        src={rocketright}
+        alt="rock"
+        className="absolute left-0 bottom-0 w-[250px] md:w-[350px] object-contain transform scale-x-[-1]"
+      />
+
+      {/* <div className="absolute top-2 left-0 w-full flex flex-col md:flex-row items-start md:items-center md:ml-40 border">
         <div className="relative flex items-center">
-          <img src={roller} alt="roller" className="h-[160px]" />
-          <div className="absolute left-[42px] bg-gradient-to-r from-[#c3150d] to-[#d0301b] text-white py-4 px-6 text-lg font-semibold rounded-tr-lg rounded-br-lg">
-            How do I earn Tigress Tokens?
-          </div>
-        </div>
-      </div>
+          <img src={roller} alt="roller" className="h-[260px]" />
 
-      {/* Text */}
-      <div className="relative max-w-lg text-center md:text-left md:mr-20 mt-8 md:mt-0">
-        <p className="text-gray-800 text-base leading-relaxed">
+        </div>
+      </div> */}
+
+
+
+      <div className="max-w-lg mx-auto mt-[80%] md:mt- z-10 text-center border">
+        <p className="text-base sm:text-xl xl:text-3xl text-gray-800 leading-relaxed">
           You can earn Tigress Tokens by actively engaging in various in-game
           activities such as completing daily and special quests, winning
           mini-games, and interacting with your virtual tiger through feeding,
@@ -49,17 +47,34 @@ const FaqAns: React.FC = () => {
         </p>
       </div>
 
+
+
+
       {/* Tiger Image */}
-      <div className="relative flex justify-end md:mr-20 mt-10 md:mt-0">
-        <img src={tiger} alt="tiger" className="w-[220px] md:w-[260px]" />
+      <img
+        src={tiger}
+        alt="tiger"
+        className="absolute bottom-0 right-[-100px] w-[700px] md:w-[550px] lg:w-[200px] h-auto transform scale-x-[-1] z-0"
+      />
+
+
+
+
+      <div className="relative w-[100px] md:w-[120px]">
+        <div className="fixed top-6 left-70 w-[200px] md:w-[250px] lg:w-[400px] z-50 transform scale-x-[-1]">
+          {/* <img
+            src={flag}
+            alt="flag"
+            className="w-full"
+          /> */}
+          <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-sm md:text-lg lg:text-2xl font-bold text-center transform scale-x-[-1]">
+            How do I earn Tigress Tokens?
+          </span>
+        </div>
+
+
       </div>
 
-      {/* Optional decorative flag */}
-      <img
-        src={flag}
-        alt="flag"
-        className="absolute top-0 left-0 w-[100px] md:w-[120px]"
-      />
     </section>
   );
 };
