@@ -37,7 +37,7 @@ const RoadMap = () => {
                   <img
                     src={roller}
                     alt={`pillar-${idx}`}
-                    className="w-20 md:w-24 lg:w-32 transform hover:scale-105 transition"
+                    className="w-20 md:w-24 lg:w-56 transform hover:scale-105 transition"
                   />
                   <div className="mt-1 text-sm md:text-base text-black font-semibold">
                     {label}

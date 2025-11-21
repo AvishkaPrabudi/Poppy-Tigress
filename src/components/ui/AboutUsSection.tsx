@@ -6,7 +6,7 @@ import RoadMap from "./RoadMap.tsx";
 const AboutUsSection = () => {
   return (
     <>
-  <section className="w-full bg-gradient-to-b from-[#0b0d17] via-[#1a1f30] to-[#222] text-white py-8 md:py-12 relative overflow-hidden">
+  <section className="w-full  h-screen bg-gradient-to-b from-[#0b0d17] via-[#1a1f30] to-[#222] text-white py-8 md:py-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-12 relative z-10">
         
         {/* Text Block */}

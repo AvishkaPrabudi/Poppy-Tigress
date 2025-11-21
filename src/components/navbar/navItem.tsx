@@ -31,7 +31,7 @@ const NavItem = () => {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-[100]" onClick={toggleMenu}>
+        <div className="fixed inset-0 bg-opacity-50 z-[100]" onClick={toggleMenu}>
           <div 
             className="absolute right-0 top-0 h-full w-full max-w-md bg-gradient-to-b from-amber-900 via-amber-950 to-stone-900 shadow-2xl p-8"
             onClick={(e) => e.stopPropagation()}

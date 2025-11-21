@@ -43,7 +43,7 @@ const HomePage = () => {
       </div>
 
       {/* Palace background */}
-      <div className="relative flex justify-center px-4 3xl:mt-[100px] mt-[10px]">
+      <div className="   relative flex justify-center px-4 3xl:mt-[100px] mt-[10px]">
   <img src={palacePng} alt="palace" className="w-[1131px] md:block hidden  object-contain" />
 
         {/* Tiger in front */}
@@ -85,17 +85,6 @@ const HomePage = () => {
 
 {/* mobile screen hero  */}
  
-{/* Palace background */}
-      <div className="relative flex justify-center px-4 ">
-  <img src={PalacePng2} alt="palace" className="absolute z-10 w-[503px] sm:max-w-[600px]  h-auto top-[-350px] object-bottom  block md:hidden" />
-
-        {/* Tiger in front */}
-        <img
-          src={tiger}
-          alt="tiger"
-          className="absolute w-[375px]  z-20 h-auto  block md:hidden object-contain top-[-260px]"
-        />
-      </div>
 
 
 
