@@ -3,11 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeftToLine } from 'lucide-react';
 import rocketright from '../../assets/rock.right.png';
 import tiger from '../../assets/hero-tiger.png';
-<<<<<<< HEAD
 
-=======
-import roller from '../../assets/roller.png';
->>>>>>> 95e7b60dbb03e1540f0d6c13de6e84ae3f7e08c4
 import flag3 from '../../assets/flag3.png';
 import place1 from '../../assets/place1.png';
 

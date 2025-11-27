@@ -4,102 +4,75 @@ import rockleftpng from "../../assets/rock-left.png";
 import rocketright from "../../assets/rock.right.png";
 import tiger from "../../assets/hero-tiger.png";
 
-import flag from "../../assets/flag.png";
+import learnFlag from "../../assets/learnFlag.png";
+import WhatisFlag from "../../assets/WhatisFlag.png";
+import PlayFlag from "../../assets/PlayFlag.png";
+import TigressTokensFlag from "../../assets/TigressTokensFlag.png";
 import Tiger from "./Tiger";
 import Search from "./Search";
-import Footer from "./footer.tsx";
-
 const FAQ = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      {/* Tiger Component at the top */}
-      <Tiger />
 
+    <Tiger />
       <Search />
 
-      <div className="relative min-h-screen bg-white overflow-hidden text-black font-sans">
-        {/* Ask a Question Ribbon */}
-        <div className="flex flex-col items-center -mt-10 relative z-20"></div>
+      <div className="relative bg-white overflow-hidden text-black font-sans"></div>
 
-        {/* FAQ Section */}
-        <div className="relative mt-12 flex flex-col items-center">
-          <img src={palacePng} alt="palace" className="w-[600px] z-0" />
-          <img
-            src={rockleftpng}
-            alt="rock left"
-            className="absolute left-0 top-1/2 w-40 -translate-y-1/2"
-          />
-          <img
-            src={rocketright}
-            alt="rock right"
-            className="absolute right-0 top-1/2 w-40 -translate-y-1/2"
-          />
+      <div className="  h-screen relative mt-12 flex flex-col items-center">
 
-          
+        {/* Background Palace */}
+        <img src={palacePng} alt="palace" className=" hidden md:block xl:w-[1020px] z-0 xl:mt-22" />
 
-          {/* FAQ Questions */}
-          <div className="absolute top-[28%] w-full px-10 flex flex-col items-center gap-8 text-white font-semibold z-10">
-            <div className="flex flex-wrap justify-center gap-6">
-              {/* CLICKABLE FLAG */}
-              <div
-                className="relative cursor-pointer transition-transform duration-300 hover:scale-105"
-                onClick={() => navigate("/faq")}
-              >
-                <img
-                  src={flag}
-                  alt="flag"
-                  className="absolute -top-3 left-1/2 -translate-x-1/2 w-[200px] max-w-[742px] h-auto z-0"
-                />
-                <div className="relative bg-gradient-to-r from-red-600 to-orange-500 px-6 py-3 rounded-md shadow-lg text-center min-w-[230px]">
-                  How do I earn Tigress Tokens?
-                </div>
-              </div>
+        {/* Left Rock (hidden on mobile) */}
+        <img
+          src={rockleftpng}
+          alt="rock left"
+          className="hidden md:block absolute left-0 top-1/2 xl:h-[780px] -translate-y-1/2"
+        />
 
-              <div className="relative">
-                <img
-                  src={flag}
-                  alt="flag"
-                  className="absolute -top-3 left-1/2 -translate-x-1/2 w-[200px] z-0"
-                />
-                <div className="relative bg-gradient-to-r from-red-600 to-orange-500 px-6 py-3 rounded-md shadow-lg text-center min-w-[230px]">
-                  What is PoppyTigress?
-                </div>
-              </div>
+        {/* Right Rock (hidden on mobile) */}
+        <img
+          src={rocketright}
+          alt="rock right"
+          className="hidden md:block absolute right-0 top-1/2 xl:h-[780px] -translate-y-1/2"
+        />
+
+        {/* FLAGS */}
+        <div className="absolute top-[28%] flex flex-col items-center z-10 w-full">
+          {/* Grid: Mobile 1 column, Desktop 2 columns */}
+          <div className="grid grid-cols-1 gap-2 -mt-81  md:grid-cols-2 gap-8 place-items-center xl:mt-2">
+
+            {/* FLAG 1 */}
+            <div
+              className="cursor-pointer hover:scale-105 transition-transform"
+              onClick={() => navigate("/faq")}
+            >
+              <img src={learnFlag} alt="Learn Flag" className="w-[300px] md:w-[400px] xl:w-[500px]" />
             </div>
 
-            <div className="flex flex-wrap justify-center gap-6">
-              <div className="relative">
-                <img
-                  src={flag}
-                  alt="flag"
-                  className="absolute -top-3 left-1/2 -translate-x-1/2 w-[200px] z-0"
-                />
-                <div className="relative bg-gradient-to-r from-red-600 to-orange-500 px-6 py-3 rounded-md shadow-lg text-center min-w-[230px]">
-                  Is Tigress free to play?
-                </div>
-              </div>
+            {/* FLAG 2 */}
+            <img src={WhatisFlag} alt="What is Flag" className="w-[300px] md:w-[400px] xl:w-[500px] " />
 
-              <div className="relative">
-                <img
-                  src={flag}
-                  alt="flag"
-                  className="absolute -top-3 left-1/2 -translate-x-1/2 w-[200px] z-0"
-                />
-                <div className="relative bg-gradient-to-r from-red-600 to-orange-500 px-6 py-3 rounded-md shadow-lg text-center min-w-[230px]">
-                  What are Tigress Tokens?
-                </div>
-              </div>
-            </div>
+            {/* FLAG 3 */}
+            <img src={PlayFlag} alt="Play Flag" className="w-[300px] md:w-[400px] xl:w-[500px]" />
+
+            {/* FLAG 4 */}
+            <img src={TigressTokensFlag} alt="Tokens Flag" className="w-[300px] md:w-[400px] xl:w-[500px]" />
+
           </div>
-
-          <img src={tiger} alt="Tiger Center" className="absolute top-[48%] w-48" />
         </div>
 
-        
+        {/* TIGER */}
+        <img
+          src={tiger}
+          alt="Tiger Center"
+          className=" hidden md:block absolute w-36 md:w-48 z-20 xl:w-[400px] xl:mt-2
+                      left-4 md:top-[48%] md:left-auto md:right-auto"
+        />
       </div>
-               <Footer />
     </>
   );
 };

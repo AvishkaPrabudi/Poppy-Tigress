@@ -1,4 +1,4 @@
-import MartialTiger from "../../assets/MartialTiger.png";
+import MartialTiger from "../../assets/martial-tiger.gif";
 
 const Tiger = () => {
   return (

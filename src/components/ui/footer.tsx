@@ -56,12 +56,12 @@ const Footer = () => {
                     </div>
 
                     {/* Right Navigation Section */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div className="grid :xl:grid-cols-2 md:grid-cols-3 gap-4">
                         {["HOME", "ABOUT US", "ROADMAP", "HOW TO BUY", "TOKENOMICS", "FAQ"].map(
                             (label) => (
                                 <button
                                     key={label}
-                                    className="bg-red-600 hover:bg-red-600 text-white font-bold py-4 px-6 rounded-xl border-b-4 border-red-800 shadow-lg transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-sm md:text-base"
+                                    className="bg-[#F15B50] hover:bg-red-600 text-white font-bold py-4 px-6 rounded-xl border-b-4 border-red-800 shadow-lg transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-sm md:text-base"
                                 >
                                     {label}
                                 </button>
@@ -71,8 +71,8 @@ const Footer = () => {
                 </div>
             </div>
 
-            {/* Copyright */}
-            <div className="bg-amber-900 text-center mt-6 py-3 rounded-lg">
+            {/* Copyright fixed at bottom */}
+            <div className="fixed bottom-0 left-0 w-full bg-amber-900 text-center py- -1/2 -t-lg z-50">
                 <p className="text-sm text-white">
                     © Copyright 2025 — All rights reserved by PoppyTigress
                 </p>

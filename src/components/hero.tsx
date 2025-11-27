@@ -1,7 +1,7 @@
 import palacePng from "../assets/hero-palace.png";
 import rockleftpng from "../assets/rock-left.png";
 import rocketright from "../assets/rock.right.png";
-import tiger from "../assets/hero-tiger.png";
+import tiger from "../assets/3c4c55d1-c59d-4175-8ae6-f246fb-unscreen.gif";
 import NavItem from "./navbar/navItem";
 import ellipsePng from "../assets/Ellipse 2.png";
 import PalacePng2 from "../assets/palace2.png"
@@ -43,22 +43,22 @@ const HomePage = () => {
       </div>
 
       {/* Palace background */}
-      <div className="   relative flex justify-center px-4 3xl:mt-[100px] mt-[10px]">
-  <img src={palacePng} alt="palace" className="w-[1131px] md:block hidden  object-contain" />
+      <div className="    mt-[20px] px-4 3xl:mt-[200px] xl:mt-[25px] relative flex justify-center md:mt-[100px] ">
+  <img src={palacePng} alt="palace" className=" w-[503px] h-[760px]  3xl: w-[1131px] xl:w-[900px] md:block   object-contain" />
 
         {/* Tiger in front */}
         <img
           src={tiger}
           alt="tiger"
-          className="absolute 3xl:w-[724px] max-w-[600px] md:block hidden 3xl:top-[97px] top-[80px] h-auto object-contain"
+          className=" mt-[200px] absolute 3xl:w-[724px] max-w-[600px]  3xl:top-[97px] top-[80px] xl:mt-[60px] h-auto object-contain"
         />
       </div>
 
       {/* Center Content */}
-  <div className="absolute inset-0 flex flex-col justify-end items-center text-center px-4 sm:px-6 lg:px-8 md:mb-30 z-30">
+  <div className="absolute inset-0 flex flex-col justify-end items-center text-center px-4 sm:px-6 lg:px-4 md:mb-30 z-30">
 
         {/* Search / Input box */}
-  <div className="flex items-center  w-full max-w-sm sm:max-w-md md:max-w-md lg:max-w-md bg-white rounded-xl border border-gray-400 px-3 sm:px-4 py-2 shadow-md ">
+  <div className="flex items-center  w-full max-w-sm sm:max-w-md md:max-w-md lg:px-7 -md bg-white rounded-xl border border-gray-400 px-3 sm:px-4 py-2 shadow-md ">
           <input
             type="text"
             placeholder="Type here or Click Tiger to Speak"
@@ -71,10 +71,10 @@ const HomePage = () => {
 
         {/* Buttons */}
         <div className="flex flex-row md:flex-row gap-3 sm:gap-6 w-full max-w-sm sm:max-w-md md:max-w-md lg:max-w-md mt-5">
-          <button className="flex-1 bg-[#F15B50]  hover:bg-red-600 text-white px-4 sm:px-6 lg:px-8 py-2 rounded-lg font-bold text-sm sm:text-base text-center">
+          <button className="flex-1 bg-[#F15B50]  hover:bg-red-600 text-white px-4 sm:px-6 lg:px-0 py-2 rounded-lg font-bold text-sm sm:text-base text-center">
             BUY NOW
           </button>
-          <button className="flex-1 bg-[#F15B50] hover:bg-red-600 text-white px-4 sm:px-6 lg:px-8 py-2 rounded-lg font-bold text-sm sm:text-base text-center">
+          <button className="flex-1 bg-[#F15B50] hover:bg-red-600 text-white px-4 sm:px-6 lg:px-0 py-4 rounded-lg font-bold text-sm sm:text-base text-center">
             Tools
           </button>
         </div>

@@ -12,10 +12,10 @@ const NavItem = () => {
   return (
     <>
       <header className="flex justify-between items-center py-1 sm:py-1 relative z-50 w-full max-w-7xl mx-auto px-6">
-        <img src={logo} alt="logo" className="3xl:max-w-[191px]  max-w-[50px]" />
+        <img src={logo} alt="logo" className="3xl:max-w-[191px]  max-w-[70px]" />
 
         <div className="flex items-center gap-4">
-          <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-1 rounded-lg font-semibold text-base min-w-[200px]">
+          <button className="bg-red-500 hover:bg-red-600 text-white px-18 py-3 rounded-lg font-semibold text-base min-w-[200px]">
             Learn About tigress
           </button>
           <button 
@@ -45,23 +45,23 @@ const NavItem = () => {
             </button>
 
             {/* Menu Items */}
-            <nav className="flex flex-col gap-6 mt-16">
-              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg">
+            <nav className="flex flex-col gap-6 mt-16 xl:w- [2px] ">
+              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-2 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg  xl:py-4 px-7">
                 HOME
               </button>
-              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 text-lg">
+              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-2 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 text-lg">
                 About Us
               </button>
-              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg">
+              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-2 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg">
                 ROADMAP
               </button>
-              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg">
+              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-2 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg">
                 HOW TO BUY
               </button>
-              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg">
+              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-2 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg">
                 TORENOMICS
               </button>
-              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg">
+              <button className="bg-gradient-to-r from-red-400 to-red-500 hover:from-red-500 hover:to-red-600 text-white font-bold py-4 px-2 rounded-2xl shadow-lg border-b-4 border-red-800 transition-all hover:border-b-2 hover:translate-y-0.5 uppercase text-lg">
                 FAQ
               </button>
             </nav>
